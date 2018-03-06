@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-color: rgb(230, 235, 255);
+}
+
+.fish,
+.up, .down, .side {
+    position: absolute;
+}
+
+.body, .eye, .tail {
+    position: relative;
+}
+
+.body {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.eye {
+    top: -165px;
+    left: 10px;
+    font-size: 100px;
+}
+
+.tail {
+    top: -65px;
+    left: 205px;
+}
+
+.up, .down, .side {
+    height: 65px;
+    width: 10px;
+    background-color: black;
+}
+
+.up {
+    top: -10px;
+    left: -29px;
+    transform: rotate(50deg);
+}
+
+.down {
+    top: 5px;
+    left: -29px;
+    transform: rotate(-50deg);
+}
+
+.side {
+    top: -2px;
+    left: -2px;
+}
+
+#outlier .eye {
+    top: -165px;
+    left: 110px;
+    font-size: 100px;
+}
+
+#outlier .tail {
+    top: -65px;
+    left: -50px;
+}
+
+#outlier .up {
+    top: -10px;
+    left: 34px;
+    transform: rotate(-50deg);
+}
+
+#outlier .down {
+    top: 5px;
+    left: 34px;
+    transform: rotate(50deg);
+}
+
+#outlier .side {
+    top: -2px;
+    left: 8px;
+}
+
+#one {
+    top: 50px;
+    left: 200px;
+}
+
+#two {
+    top: 160px;
+    left: 800px;
+}
+
+#three {
+    top: 270px;
+    left: 1200px;
+}
+
+#four {
+    top: 380px;
+    left: 300px;
+}
+
+#five {
+    top: 490px;
+    left: 100px;
+}
+
+#six {
+    top: 600px;
+    left: 400px;
+}
+
+#seven {
+    top: 710px;
+    left: 1000px;
+}
+
+#outlier {
+    top: 545px;
+    left: 960px;
+    z-index: 10;
+}
+
+#outlier .body {
+    background-color: blue;
+}
